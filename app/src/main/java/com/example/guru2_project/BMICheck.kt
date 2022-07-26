@@ -3,7 +3,6 @@ package com.example.guru2_project
 import android.icu.text.DecimalFormat
 import android.os.Bundle
 import android.text.Editable
-import android.text.TextUtils
 import android.text.TextWatcher
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
