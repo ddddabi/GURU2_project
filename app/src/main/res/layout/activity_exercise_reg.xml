@@ -49,6 +49,7 @@
         </ImageView>
         <EditText
             android:id="@+id/edtEDate"
+            android:paddingLeft="28dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/inputbox" />
@@ -69,6 +70,7 @@
         </ImageView>
         <EditText
             android:id="@+id/edtEName"
+            android:paddingLeft="28dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/inputbox" />
@@ -89,6 +91,7 @@
         </ImageView>
         <EditText
             android:id="@+id/edtStart"
+            android:paddingLeft="28dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/inputbox" />
@@ -109,6 +112,7 @@
         </ImageView>
         <EditText
             android:id="@+id/edtFinish"
+            android:paddingLeft="28dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/inputbox" />

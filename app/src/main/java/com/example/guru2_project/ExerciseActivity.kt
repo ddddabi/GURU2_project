@@ -7,24 +7,23 @@ import android.database.sqlite.SQLiteDatabase
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.*
 
 class ExerciseActivity : AppCompatActivity() {
 
     lateinit var dbManager: DBManager
     lateinit var sqlitedb: SQLiteDatabase
     lateinit var layout: LinearLayout
-    lateinit var btn_exer_list: Button
-    lateinit var btn_home: Button
+
+    lateinit var btn_exer_list: ImageButton
+    lateinit var btn_home: ImageButton
 
     @SuppressLint("Range")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_exercise)
 
-        dbManager = DBManager(this, "guruDB", null, 1)
+        dbManager = DBManager(this, "guru2DB", null, 1)
         sqlitedb = dbManager.readableDatabase
 
         layout = findViewById(R.id.ExerciseList)
@@ -46,33 +45,33 @@ class ExerciseActivity : AppCompatActivity() {
             layout_item.orientation = LinearLayout.HORIZONTAL
             layout_item.id = num
 
+            var tvEDate: TextView = TextView(this)
+            tvEDate.text = str_date
+            tvEDate.textSize = 20f
+            tvEDate.setTextColor(Color.parseColor("#000000"))
+            layout_item.addView(tvEDate)
+
             var tvEName: TextView = TextView(this)
             tvEName.text = str_name
-            tvEName.textSize = 10f
-            tvEName.setTextColor(Color.BLACK)
+            tvEName.textSize = 20f
+            tvEName.setTextColor(Color.parseColor("#000000"))
             layout_item.addView(tvEName)
-
-            var tvEDate: TextView = TextView(this)
-            tvEDate.text = str_name
-            tvEDate.textSize = 15f
-            tvEDate.setTextColor(Color.BLACK)
-            layout_item.addView(tvEDate)
 
             var tvStart: TextView = TextView(this)
             tvStart.text = str_start
-            tvStart.textSize = 10f
-            tvStart.setTextColor(Color.BLACK)
+            tvStart.textSize = 20f
+            tvStart.setTextColor(Color.parseColor("#000000"))
             layout_item.addView(tvStart)
 
             var tvFinish: TextView = TextView(this)
             tvFinish.text = str_finish
-            tvFinish.textSize = 10f
-            tvFinish.setTextColor(Color.BLACK)
+            tvFinish.textSize = 20f
+            tvFinish.setTextColor(Color.parseColor("#000000"))
             layout_item.addView(tvFinish)
 
             layout_item.setOnClickListener() {
                 val intent = Intent(this, ExerciseInfo::class.java)
-                intent.putExtra("intent_name", str_name)
+                intent.putExtra("intent_date", str_date)
                 startActivity(intent)
             }
 
@@ -95,3 +94,4 @@ class ExerciseActivity : AppCompatActivity() {
         }
     }
 }
+

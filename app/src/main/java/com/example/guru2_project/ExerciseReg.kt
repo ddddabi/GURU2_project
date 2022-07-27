@@ -6,13 +6,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 
 class ExerciseReg : AppCompatActivity() {
 
     lateinit var dbManager: DBManager
     lateinit var sqlitedb: SQLiteDatabase
 
-    lateinit var btnRegister: Button
+    lateinit var btnRegister: ImageButton
     lateinit var edtEDate: EditText
     lateinit var edtEName: EditText
     lateinit var edtStart: EditText
@@ -28,21 +29,20 @@ class ExerciseReg : AppCompatActivity() {
         edtStart = findViewById(R.id.edtStart)
         edtFinish = findViewById(R.id.edtFinish)
 
-
-        dbManager = DBManager(this, "guruDB", null, 1)
+        dbManager = DBManager(this, "guru2DB", null, 1)
 
         btnRegister.setOnClickListener {
-            var str_name: String = edtEName.text.toString()
             var str_date: String = edtEDate.text.toString()
+            var str_name: String = edtEName.text.toString()
             var str_start: String = edtStart.text.toString()
             var str_finish: String = edtFinish.text.toString()
 
             sqlitedb = dbManager.writableDatabase
-            sqlitedb.execSQL("INSERT INTO GURU2Project VALUES ('" + str_name + "','" + str_date + "','" + str_start + "','" + str_finish + "')")
+            sqlitedb.execSQL("INSERT INTO GURU2Project VALUES ('"+str_date+"','"+str_name+"','"+str_start+"','"+str_finish+"')")
             sqlitedb.close()
 
             val intent = Intent(this, ExerciseInfo::class.java)
-            intent.putExtra("intent_name", str_name)
+            intent.putExtra("intent_date", str_date)
             startActivity(intent)
         }
     }
