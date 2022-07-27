@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         // start 버튼 클릭시 캘린더 화면으로 전환
         startButton.setOnClickListener {
-            var intent = Intent(this, CalendarActivity::class.java)
+            var intent = Intent(this, MenuActivity::class.java)
             startActivity(intent)
         }
     }
