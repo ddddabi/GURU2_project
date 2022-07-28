@@ -17,7 +17,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/header"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="40dp"></ImageView>
+        tools:layout_editor_absoluteY="40dp">
+
+    </ImageView>
 
     <ImageView
         android:id="@+id/meal_list"
@@ -74,13 +76,13 @@
 
         <LinearLayout
             android:id="@+id/MDate"
-            android:layout_width="80dp"
+            android:layout_width="82dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="40dp"
-            android:layout_marginLeft="10dp"
-            android:orientation="vertical">
-        </LinearLayout>
+
+            android:orientation="vertical"></LinearLayout>
 
         <LinearLayout
             android:id="@+id/MFood"
@@ -89,7 +91,9 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="40dp"
             android:layout_marginBottom="5dp"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/MTime"
