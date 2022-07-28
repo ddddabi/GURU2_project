@@ -53,41 +53,45 @@ class ExerciseActivity : AppCompatActivity() {
 
             var layout1_item:LinearLayout = LinearLayout(this)
             layout1_item.orientation = LinearLayout.HORIZONTAL
+            layout1_item.setGravity(Gravity.CENTER);
             layout1_item.id = num
 
             var tvEDate: TextView = TextView(this)
             tvEDate.text = str_date
-            tvEDate.textSize = 17f
+            tvEDate.textSize = 15f
             tvEDate.setTextColor(Color.parseColor("#000000"))
             layout1_item.addView(tvEDate)
 
             var layout2_item:LinearLayout = LinearLayout(this)
-            layout2_item.orientation = LinearLayout.VERTICAL
+            layout2_item.orientation = LinearLayout.HORIZONTAL
+            layout2_item.setGravity(Gravity.CENTER)
             layout2_item.id = num
 
             var tvEName: TextView = TextView(this)
             tvEName.text = str_name
-            tvEName.textSize = 17f
+            tvEName.textSize = 15f
             tvEName.setTextColor(Color.parseColor("#000000"))
             layout2_item.addView(tvEName)
 
             var layout3_item:LinearLayout = LinearLayout(this)
-            layout3_item.orientation = LinearLayout.VERTICAL
+            layout3_item.orientation = LinearLayout.HORIZONTAL
+            layout3_item.setGravity(Gravity.CENTER);
             layout3_item.id = num
 
             var tvStart: TextView = TextView(this)
             tvStart.text = str_start
-            tvStart.textSize = 17f
+            tvStart.textSize = 15f
             tvStart.setTextColor(Color.parseColor("#000000"))
             layout3_item.addView(tvStart)
 
             var layout4_item:LinearLayout = LinearLayout(this)
-            layout4_item.orientation = LinearLayout.VERTICAL
+            layout4_item.orientation = LinearLayout.HORIZONTAL
+            layout4_item.setGravity(Gravity.CENTER);
             layout4_item.id = num
 
             var tvFinish: TextView = TextView(this)
             tvFinish.text = str_finish
-            tvFinish.textSize = 17f
+            tvFinish.textSize = 15f
             tvFinish.setTextColor(Color.parseColor("#000000"))
             layout4_item.addView(tvFinish)
 
