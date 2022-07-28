@@ -4,7 +4,6 @@ import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 
@@ -24,9 +23,9 @@ class ExerciseReg : AppCompatActivity() {
         setContentView(R.layout.activity_exercise_reg)
 
         btn_reg = findViewById(R.id.btn_reg)
-        edtEDate = findViewById(R.id.edtEDate)
-        edtEName = findViewById(R.id.edtEName)
-        edtStart = findViewById(R.id.edtStart)
+        edtEDate = findViewById(R.id.edtMDate)
+        edtEName = findViewById(R.id.edtMFood)
+        edtStart = findViewById(R.id.edtMTime)
         edtFinish = findViewById(R.id.edtFinish)
 
         dbManager = DBManager(this, "guru2DB", null, 1)

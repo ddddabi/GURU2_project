@@ -25,111 +25,76 @@
         android:layout_width="150dp"
         android:layout_height="35dp"
         android:layout_gravity="left"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/today_exer"
+        app:srcCompat="@drawable/meal_today_record"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="110dp">
-    </ImageView>
+        tools:layout_editor_absoluteY="110dp"></ImageView>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp">
 
         <ImageView
-            android:layout_width="100dp"
+            android:layout_width="88dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/ex_date">
-        </ImageView>
-        <TextView
+            app:srcCompat="@drawable/meal_date"></ImageView>
+
+        <EditText
             android:id="@+id/edtMDate"
-            android:paddingTop="10dp"
-            android:paddingLeft="28dp"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/inputbox" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="20dp">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/ex_name">
-        </ImageView>
-        <TextView
-            android:id="@+id/edtMFood"
-            android:paddingTop="10dp"
-            android:paddingLeft="28dp"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/inputbox" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="20dp">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/ex_start">
-        </ImageView>
-        <TextView
-            android:id="@+id/edtMTime"
-            android:paddingTop="10dp"
-            android:paddingLeft="28dp"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/inputbox" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="43dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="15dp">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/ex_finish">
-
-        </ImageView>
-
-        <TextView
-            android:id="@+id/edtFinish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/inputbox"
-            android:paddingLeft="28dp"
-            android:paddingTop="10dp"
-            android:textStyle="bold" />
+            android:paddingLeft="28dp" />
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/meal_food"></ImageView>
+        <EditText
+            android:id="@+id/edtMFood"
+            android:paddingLeft="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputbox" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/meal_time"></ImageView>
+        <EditText
+            android:id="@+id/edtMTime"
+            android:paddingLeft="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputbox" />
+
+    </LinearLayout>
 
     <ImageButton
         android:id="@+id/btn_meal_save"
@@ -139,7 +104,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/exer_listview" />
+        app:srcCompat="@drawable/meal_record" />
 
     <ImageButton
         android:id="@+id/btn_meal_list"
@@ -149,8 +114,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="30dp"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/ex_delete"
-        />
+        app:srcCompat="@drawable/meal_list2" />
 
     <ImageButton
         android:id="@+id/btn_main"

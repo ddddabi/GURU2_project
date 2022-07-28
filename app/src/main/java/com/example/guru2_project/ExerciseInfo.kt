@@ -33,14 +33,14 @@ class ExerciseInfo : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_exercise_info)
 
-        tvEDate = findViewById(R.id.edtEDate)
-        tvEName = findViewById(R.id.edtEName)
-        tvStart = findViewById(R.id.edtStart)
+        tvEDate = findViewById(R.id.edtMDate)
+        tvEName = findViewById(R.id.edtMFood)
+        tvStart = findViewById(R.id.edtMTime)
         tvFinish = findViewById(R.id.edtFinish)
 
-        btnlist = findViewById(R.id.btnlist)
-        btnMain = findViewById(R.id.btnMain)
-        btnDelete = findViewById(R.id.btnDelete)
+        btnlist = findViewById(R.id.btn_meal_save)
+        btnMain = findViewById(R.id.btn_main)
+        btnDelete = findViewById(R.id.btn_meal_list)
 
         val intent = intent
         str_date = intent.getStringExtra("intent_date").toString()

@@ -19,11 +19,11 @@ class MenuActivity : AppCompatActivity() {
         btn_exercise = findViewById(R.id.btn_exercise)
         btn_bmi = findViewById(R.id.btn_bmi)
 
-        // btn_meal 버튼 클릭시 식단 기록 화면으로 전환
-//        btn_meal.setOnClickListener {
-//            var intent = Intent(this, MealActivity::class.java)
-//            startActivity(intent)
-//        }
+         //btn_meal 버튼 클릭시 식단 기록 화면으로 전환
+        btn_meal.setOnClickListener {
+            var intent = Intent(this, MealActivity::class.java)
+            startActivity(intent)
+        }
 
         // btn_exercise 버튼 클릭시 운동 기록 화면으로 전환
         btn_exercise.setOnClickListener {

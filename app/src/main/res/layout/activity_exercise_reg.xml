@@ -48,7 +48,7 @@
             app:srcCompat="@drawable/ex_date">
         </ImageView>
         <EditText
-            android:id="@+id/edtEDate"
+            android:id="@+id/edtMDate"
             android:paddingLeft="28dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
             app:srcCompat="@drawable/ex_name">
         </ImageView>
         <EditText
-            android:id="@+id/edtEName"
+            android:id="@+id/edtMFood"
             android:paddingLeft="28dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
             app:srcCompat="@drawable/ex_start">
         </ImageView>
         <EditText
-            android:id="@+id/edtStart"
+            android:id="@+id/edtMTime"
             android:paddingLeft="28dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

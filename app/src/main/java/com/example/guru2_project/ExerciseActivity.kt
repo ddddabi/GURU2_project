@@ -37,7 +37,7 @@ class ExerciseActivity : AppCompatActivity() {
         layout2 = findViewById(R.id.EName)
         layout3 = findViewById(R.id.EStartTime)
         layout4 = findViewById(R.id.EFinishTime)
-        btn_exer_list = findViewById(R.id.btn_exer_list)
+        btn_exer_list = findViewById(R.id.btn_meal_record)
         btn_home = findViewById(R.id.btn_home)
 
         var cursor: Cursor
