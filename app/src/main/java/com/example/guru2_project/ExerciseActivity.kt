@@ -17,7 +17,10 @@ class ExerciseActivity : AppCompatActivity() {
 
     lateinit var dbManager: DBManager
     lateinit var sqlitedb: SQLiteDatabase
-    lateinit var layout: LinearLayout
+    lateinit var layout1: LinearLayout
+    lateinit var layout2: LinearLayout
+    lateinit var layout3: LinearLayout
+    lateinit var layout4: LinearLayout
 
     lateinit var btn_exer_list: ImageButton
     lateinit var btn_home: ImageButton
@@ -30,7 +33,10 @@ class ExerciseActivity : AppCompatActivity() {
         dbManager = DBManager(this, "guru2DB", null, 1)
         sqlitedb = dbManager.readableDatabase
 
-        layout = findViewById(R.id.ExerciseList)
+        layout1 = findViewById(R.id.EDate)
+        layout2 = findViewById(R.id.EName)
+        layout3 = findViewById(R.id.EStartTime)
+        layout4 = findViewById(R.id.EFinishTime)
         btn_exer_list = findViewById(R.id.btn_exer_list)
         btn_home = findViewById(R.id.btn_home)
 
@@ -45,42 +51,74 @@ class ExerciseActivity : AppCompatActivity() {
             var str_start = cursor.getString((cursor.getColumnIndex("startTime"))).toString()
             var str_finish = cursor.getString((cursor.getColumnIndex("finishTime"))).toString()
 
-            var layout_item:LinearLayout = LinearLayout(this)
-            layout_item.orientation = LinearLayout.HORIZONTAL
-            layout_item.setGravity(Gravity.CENTER)
-            layout_item.id = num
+            var layout1_item:LinearLayout = LinearLayout(this)
+            layout1_item.orientation = LinearLayout.HORIZONTAL
+            layout1_item.id = num
 
             var tvEDate: TextView = TextView(this)
             tvEDate.text = str_date
             tvEDate.textSize = 17f
             tvEDate.setTextColor(Color.parseColor("#000000"))
-            layout_item.addView(tvEDate)
+            layout1_item.addView(tvEDate)
+
+            var layout2_item:LinearLayout = LinearLayout(this)
+            layout2_item.orientation = LinearLayout.VERTICAL
+            layout2_item.id = num
 
             var tvEName: TextView = TextView(this)
             tvEName.text = str_name
             tvEName.textSize = 17f
             tvEName.setTextColor(Color.parseColor("#000000"))
-            layout_item.addView(tvEName)
+            layout2_item.addView(tvEName)
+
+            var layout3_item:LinearLayout = LinearLayout(this)
+            layout3_item.orientation = LinearLayout.VERTICAL
+            layout3_item.id = num
 
             var tvStart: TextView = TextView(this)
             tvStart.text = str_start
             tvStart.textSize = 17f
             tvStart.setTextColor(Color.parseColor("#000000"))
-            layout_item.addView(tvStart)
+            layout3_item.addView(tvStart)
+
+            var layout4_item:LinearLayout = LinearLayout(this)
+            layout4_item.orientation = LinearLayout.VERTICAL
+            layout4_item.id = num
 
             var tvFinish: TextView = TextView(this)
             tvFinish.text = str_finish
             tvFinish.textSize = 17f
             tvFinish.setTextColor(Color.parseColor("#000000"))
-            layout_item.addView(tvFinish)
+            layout4_item.addView(tvFinish)
 
-            layout_item.setOnClickListener() {
+            layout1_item.setOnClickListener() {
                 val intent = Intent(this, ExerciseInfo::class.java)
                 intent.putExtra("intent_date", str_date)
                 startActivity(intent)
             }
 
-            layout.addView(layout_item)
+            layout2_item.setOnClickListener() {
+                val intent = Intent(this, ExerciseInfo::class.java)
+                intent.putExtra("intent_date", str_date)
+                startActivity(intent)
+            }
+
+            layout3_item.setOnClickListener() {
+                val intent = Intent(this, ExerciseInfo::class.java)
+                intent.putExtra("intent_date", str_date)
+                startActivity(intent)
+            }
+
+            layout4_item.setOnClickListener() {
+                val intent = Intent(this, ExerciseInfo::class.java)
+                intent.putExtra("intent_date", str_date)
+                startActivity(intent)
+            }
+
+            layout1.addView(layout1_item)
+            layout2.addView(layout2_item)
+            layout3.addView(layout3_item)
+            layout4.addView(layout4_item)
             num++;
         }
 
