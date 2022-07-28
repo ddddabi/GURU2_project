@@ -64,22 +64,26 @@
 
     </LinearLayout>
 
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:background="#E2E7FF"
+
+        android:layout_width="360dp"
         android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle_3"
         android:orientation="horizontal">
+
 
         <LinearLayout
             android:id="@+id/MDate"
             android:layout_width="82dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="12dp"
             android:layout_marginRight="40dp"
 
             android:orientation="vertical"></LinearLayout>
@@ -88,7 +92,7 @@
             android:id="@+id/MFood"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="12dp"
             android:layout_marginRight="40dp"
             android:layout_marginBottom="5dp"
             android:orientation="vertical">
@@ -99,20 +103,19 @@
             android:id="@+id/MTime"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="12dp"
             android:layout_marginBottom="5dp"
 
-            android:orientation="vertical">
-        </LinearLayout>
+            android:orientation="vertical"></LinearLayout>
 
     </LinearLayout>
-
 
     <ImageButton
         android:id="@+id/btn_meal_record"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="15dp"
         android:background="@android:color/transparent"

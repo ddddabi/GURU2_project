@@ -52,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/inputbox"
+            android:hint="ex.2022.00.00"
             android:paddingLeft="28dp" />
 
     </LinearLayout>
@@ -67,12 +68,14 @@
             android:layout_width="88dp"
             android:layout_height="match_parent"
             app:srcCompat="@drawable/meal_food"></ImageView>
+
         <EditText
             android:id="@+id/edtMFood"
-            android:paddingLeft="28dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/inputbox" />
+            android:background="@drawable/inputbox"
+            android:hint="ex. pizza"
+            android:paddingLeft="28dp" />
 
     </LinearLayout>
 
@@ -87,12 +90,14 @@
             android:layout_width="88dp"
             android:layout_height="match_parent"
             app:srcCompat="@drawable/meal_time"></ImageView>
+
         <EditText
             android:id="@+id/edtMTime"
-            android:paddingLeft="28dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/inputbox" />
+            android:background="@drawable/inputbox"
+            android:hint="ex. pm 8 : 00"
+            android:paddingLeft="28dp" />
 
     </LinearLayout>
 
@@ -104,7 +109,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/meal_record" />
+        app:srcCompat="@drawable/meal_save" />
 
     <ImageButton
         android:id="@+id/btn_meal_list"
