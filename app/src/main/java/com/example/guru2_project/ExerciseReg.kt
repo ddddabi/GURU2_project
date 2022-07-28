@@ -13,7 +13,7 @@ class ExerciseReg : AppCompatActivity() {
     lateinit var dbManager: DBManager
     lateinit var sqlitedb: SQLiteDatabase
 
-    lateinit var btnRegister: ImageButton
+    lateinit var btn_reg: ImageButton
     lateinit var edtEDate: EditText
     lateinit var edtEName: EditText
     lateinit var edtStart: EditText
@@ -23,7 +23,7 @@ class ExerciseReg : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_exercise_reg)
 
-        btnRegister = findViewById(R.id.btnRegister)
+        btn_reg = findViewById(R.id.btn_reg)
         edtEDate = findViewById(R.id.edtEDate)
         edtEName = findViewById(R.id.edtEName)
         edtStart = findViewById(R.id.edtStart)
@@ -31,7 +31,7 @@ class ExerciseReg : AppCompatActivity() {
 
         dbManager = DBManager(this, "guru2DB", null, 1)
 
-        btnRegister.setOnClickListener {
+        btn_reg.setOnClickListener {
             var str_date: String = edtEDate.text.toString()
             var str_name: String = edtEName.text.toString()
             var str_start: String = edtStart.text.toString()

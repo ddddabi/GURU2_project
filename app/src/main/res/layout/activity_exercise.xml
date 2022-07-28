@@ -34,17 +34,57 @@
         tools:layout_editor_absoluteY="110dp">
     </ImageView>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            app:srcCompat="@drawable/ex_date" >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ex_name" >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ex_start" >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ex_finish" >
+        </ImageView>
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_margin="30dp"
-        android:background="@drawable/round_btn2">
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp">
 
         <LinearLayout
             android:id="@+id/ExerciseList"
+            android:background="@drawable/round_btn2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
             android:orientation="vertical">
         </LinearLayout>
 

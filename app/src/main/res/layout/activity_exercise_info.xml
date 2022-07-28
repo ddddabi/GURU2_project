@@ -38,7 +38,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp">
 
@@ -49,6 +49,9 @@
         </ImageView>
         <TextView
             android:id="@+id/edtEDate"
+            android:paddingTop="10dp"
+            android:paddingLeft="28dp"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/inputbox" />
@@ -69,6 +72,9 @@
         </ImageView>
         <TextView
             android:id="@+id/edtEName"
+            android:paddingTop="10dp"
+            android:paddingLeft="28dp"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/inputbox" />
@@ -89,6 +95,9 @@
         </ImageView>
         <TextView
             android:id="@+id/edtStart"
+            android:paddingTop="10dp"
+            android:paddingLeft="28dp"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/inputbox" />
@@ -96,22 +105,28 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginBottom="15dp">
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="match_parent"
             app:srcCompat="@drawable/ex_finish">
+
         </ImageView>
+
         <TextView
             android:id="@+id/edtFinish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/inputbox" />
+            android:background="@drawable/inputbox"
+            android:paddingLeft="28dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -124,7 +139,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/exer_save" />
+        app:srcCompat="@drawable/exer_listview" />
 
     <ImageButton
         android:id="@+id/btnDelete"

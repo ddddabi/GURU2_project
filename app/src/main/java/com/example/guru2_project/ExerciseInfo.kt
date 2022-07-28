@@ -18,6 +18,7 @@ class ExerciseInfo : AppCompatActivity() {
     lateinit var tvEName: TextView
     lateinit var tvStart: TextView
     lateinit var tvFinish: TextView
+
     lateinit var btnlist: ImageButton
     lateinit var btnDelete: ImageButton
     lateinit var btnMain: ImageButton
@@ -48,7 +49,7 @@ class ExerciseInfo : AppCompatActivity() {
         sqlitedb = dbManager.readableDatabase
 
         var cursor: Cursor
-        cursor = sqlitedb.rawQuery("SELECT * FROM GURU2Project WHERE name = '"+str_date+"';", null)
+        cursor = sqlitedb.rawQuery("SELECT * FROM GURU2Project WHERE date = '"+str_date+"';", null)
 
         if(cursor.moveToNext()) {
             str_name = cursor.getString((cursor.getColumnIndex("name"))).toString()
@@ -74,7 +75,7 @@ class ExerciseInfo : AppCompatActivity() {
             dbManager = DBManager(this, "guru2DB", null, 1)
             sqlitedb = dbManager.readableDatabase
 
-            sqlitedb.execSQL("DELETE FROM GURU2Project WHERE name = '"+str_date+"';")
+            sqlitedb.execSQL("DELETE FROM GURU2Project WHERE date = '"+str_date+"';")
             sqlitedb.close()
             dbManager.close()
 
@@ -88,3 +89,4 @@ class ExerciseInfo : AppCompatActivity() {
         }
     }
 }
+

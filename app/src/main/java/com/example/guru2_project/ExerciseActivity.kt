@@ -5,9 +5,13 @@ import android.content.Intent
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.*
+import android.view.Gravity
+import android.widget.ImageButton
+import android.widget.LinearLayout
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+
 
 class ExerciseActivity : AppCompatActivity() {
 
@@ -43,29 +47,30 @@ class ExerciseActivity : AppCompatActivity() {
 
             var layout_item:LinearLayout = LinearLayout(this)
             layout_item.orientation = LinearLayout.HORIZONTAL
+            layout_item.setGravity(Gravity.CENTER)
             layout_item.id = num
 
             var tvEDate: TextView = TextView(this)
             tvEDate.text = str_date
-            tvEDate.textSize = 20f
+            tvEDate.textSize = 17f
             tvEDate.setTextColor(Color.parseColor("#000000"))
             layout_item.addView(tvEDate)
 
             var tvEName: TextView = TextView(this)
             tvEName.text = str_name
-            tvEName.textSize = 20f
+            tvEName.textSize = 17f
             tvEName.setTextColor(Color.parseColor("#000000"))
             layout_item.addView(tvEName)
 
             var tvStart: TextView = TextView(this)
             tvStart.text = str_start
-            tvStart.textSize = 20f
+            tvStart.textSize = 17f
             tvStart.setTextColor(Color.parseColor("#000000"))
             layout_item.addView(tvStart)
 
             var tvFinish: TextView = TextView(this)
             tvFinish.text = str_finish
-            tvFinish.textSize = 20f
+            tvFinish.textSize = 17f
             tvFinish.setTextColor(Color.parseColor("#000000"))
             layout_item.addView(tvFinish)
 
