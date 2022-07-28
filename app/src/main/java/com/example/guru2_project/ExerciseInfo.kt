@@ -38,9 +38,9 @@ class ExerciseInfo : AppCompatActivity() {
         tvStart = findViewById(R.id.edtMTime)
         tvFinish = findViewById(R.id.edtFinish)
 
-        btnlist = findViewById(R.id.btn_meal_save)
+        btnlist = findViewById(R.id.btn_meal_list)
         btnMain = findViewById(R.id.btn_main)
-        btnDelete = findViewById(R.id.btn_meal_list)
+        btnDelete = findViewById(R.id.btn_meal_delete)
 
         val intent = intent
         str_date = intent.getStringExtra("intent_date").toString()

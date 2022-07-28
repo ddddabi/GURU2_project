@@ -14,10 +14,10 @@
         android:theme="@style/Theme.GURU2_project"
         tools:targetApi="31">
         <activity
-            android:name=".MealReg"
+            android:name=".MealInfo"
             android:exported="false" />
         <activity
-            android:name=".MealInfo"
+            android:name=".MealReg"
             android:exported="false" />
         <activity
             android:name=".Mealinfo"

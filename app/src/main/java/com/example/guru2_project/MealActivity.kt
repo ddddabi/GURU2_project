@@ -92,6 +92,26 @@ class MealActivity : AppCompatActivity() {
 
 
 
+
+            layout5_item.setOnClickListener() {
+                val intent = Intent(this, MealInfo::class.java)
+                intent.putExtra("intent_food", str_food)
+                startActivity(intent)
+            }
+
+            layout6_item.setOnClickListener() {
+                val intent = Intent(this, MealInfo::class.java)
+                intent.putExtra("intent_food", str_food)
+                startActivity(intent)
+            }
+
+            layout7_item.setOnClickListener() {
+                val intent = Intent(this, MealInfo::class.java)
+                intent.putExtra("intent_food", str_food)
+                startActivity(intent)
+            }
+
+
             layout5.addView(layout5_item)
             layout6.addView(layout6_item)
             layout7.addView(layout7_item)
