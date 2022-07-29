@@ -15,8 +15,7 @@ class MealReg : AppCompatActivity() {
 
     // 이미지 버튼에 대한 변수 선언
     lateinit var btn_meal_save:ImageButton
-    lateinit var btn_meal_list:ImageButton
-    lateinit var btn_main:ImageButton
+
 
     // edtMDate, edtMFood, edtMTime에 대한 EditText 만들기
     lateinit var edtMDate:EditText
