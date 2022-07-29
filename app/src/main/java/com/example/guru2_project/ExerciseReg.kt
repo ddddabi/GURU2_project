@@ -42,6 +42,7 @@ class ExerciseReg : AppCompatActivity() {
 
             val intent = Intent(this, ExerciseInfo::class.java)
             intent.putExtra("intent_date", str_date)
+            intent.putExtra("intent_name", str_name)
             startActivity(intent)
         }
     }

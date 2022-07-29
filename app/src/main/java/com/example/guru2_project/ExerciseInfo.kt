@@ -44,12 +44,14 @@ class ExerciseInfo : AppCompatActivity() {
 
         val intent = intent
         str_date = intent.getStringExtra("intent_date").toString()
+        str_name = intent.getStringExtra("intent_name").toString()
+
 
         dbManager = DBManager(this, "guru2DB", null, 1)
         sqlitedb = dbManager.readableDatabase
 
         var cursor: Cursor
-        cursor = sqlitedb.rawQuery("SELECT * FROM GURU2Project WHERE date = '"+str_date+"';", null)
+        cursor = sqlitedb.rawQuery("SELECT * FROM GURU2Project WHERE date = '"+str_date+"' and name = '"+str_name+"';", null)
 
         if(cursor.moveToNext()) {
             str_name = cursor.getString((cursor.getColumnIndex("name"))).toString()
@@ -75,7 +77,7 @@ class ExerciseInfo : AppCompatActivity() {
             dbManager = DBManager(this, "guru2DB", null, 1)
             sqlitedb = dbManager.readableDatabase
 
-            sqlitedb.execSQL("DELETE FROM GURU2Project WHERE date = '"+str_date+"';")
+            sqlitedb.execSQL("DELETE FROM GURU2Project WHERE date = '"+str_date+"' and name = '"+str_name+"';")
             sqlitedb.close()
             dbManager.close()
 
