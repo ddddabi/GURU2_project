@@ -98,24 +98,28 @@ class ExerciseActivity : AppCompatActivity() {
             layout1_item.setOnClickListener() {
                 val intent = Intent(this, ExerciseInfo::class.java)
                 intent.putExtra("intent_date", str_date)
+                intent.putExtra("intent_name", str_name)
                 startActivity(intent)
             }
 
             layout2_item.setOnClickListener() {
                 val intent = Intent(this, ExerciseInfo::class.java)
                 intent.putExtra("intent_date", str_date)
+                intent.putExtra("intent_name", str_name)
                 startActivity(intent)
             }
 
             layout3_item.setOnClickListener() {
                 val intent = Intent(this, ExerciseInfo::class.java)
                 intent.putExtra("intent_date", str_date)
+                intent.putExtra("intent_name", str_name)
                 startActivity(intent)
             }
 
             layout4_item.setOnClickListener() {
                 val intent = Intent(this, ExerciseInfo::class.java)
                 intent.putExtra("intent_date", str_date)
+                intent.putExtra("intent_name", str_name)
                 startActivity(intent)
             }
 

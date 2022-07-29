@@ -18,6 +18,7 @@
         <entry key="..\:/Users/csm74/AndroidStudioProjects/GURU2/app/src/main/res/layout/activity_exercise_reg.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/csm74/AndroidStudioProjects/GURU2/app/src/main/res/layout/activity_main.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/csm74/AndroidStudioProjects/GURU2/app/src/main/res/layout/activity_menu.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/csm74/AndroidStudioProjects/GURU2_project_error/app/src/main/res/layout/activity_exercise.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/sososo/AndroidStudioProjects/GURU2_project/app/src/main/res/layout/activity_exercise.xml" value="0.1" />
         <entry key="..\:/Users/sososo/AndroidStudioProjects/GURU2_project/app/src/main/res/layout/activity_exercise_info.xml" value="0.25" />
         <entry key="..\:/Users/sososo/AndroidStudioProjects/GURU2_project/app/src/main/res/layout/activity_exercise_reg.xml" value="0.23229166666666667" />
@@ -33,7 +34,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
