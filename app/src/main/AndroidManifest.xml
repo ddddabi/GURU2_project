@@ -20,13 +20,7 @@
             android:name=".MealReg"
             android:exported="false" />
         <activity
-            android:name=".Mealinfo"
-            android:exported="false" />
-        <activity
             android:name=".MealActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FoodManager"
             android:exported="false" />
         <activity
             android:name=".ExerciseInfo"
