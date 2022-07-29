@@ -80,7 +80,7 @@ class MealInfo: AppCompatActivity() {
             dbManager2 = DBManager2(this, "mealDB", null, 1)
             sqlitedb = dbManager2.readableDatabase
 
-            sqlitedb.execSQL("DELETE FROM meal WHERE food = '"+str_food+"';")
+            sqlitedb.execSQL("DELETE FROM meal WHERE food = '"+str_food+"' and time = '"+str_time+"'and date = '"+str_date+"';")
             sqlitedb.close()
             dbManager2.close()
 

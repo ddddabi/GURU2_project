@@ -28,9 +28,7 @@ class MealReg : AppCompatActivity() {
         setContentView(R.layout.activity_meal_reg)
 
 
-
         btn_meal_save = findViewById(R.id.btn_meal_list)
-
 
 
         edtMDate = findViewById(R.id.edtMDate)
